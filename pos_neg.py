@@ -25,12 +25,3 @@ def pos_neg_short(a, b, negative):
         return (a < 0 and b < 0)
     else:
         return ((a<0 and b>0) or (a>0 and b<0))
-
-
-
-x = pos_neg(1, -1, True)
-print(x)
-
-
-y = pos_neg_short(1, -1, True)
-print(y)

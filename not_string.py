@@ -12,9 +12,3 @@ def not_string(str):
         return("not " + str)
     else:
         return(str)
-
-x = not_string("not candy")
-
-
-
-print(x)

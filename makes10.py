@@ -7,6 +7,3 @@
 
 def makes10(a, b):
     return (a==10 or b==10 or a+b==10)
-
-x = makes10(0,0)
-print(x)

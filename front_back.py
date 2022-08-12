@@ -6,4 +6,12 @@
 # front_back('ab') → 'ba'
 
 def front_back(str):
-    new_str =
+    if len(str) <= 1:
+        return str
+
+    mid = str[1:len(str) - 1]
+
+    return str[len(str) - 1] + mid + str[0]
+
+x = front_back("Harrison")
+print(x)

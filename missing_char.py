@@ -10,8 +10,3 @@ def missing_char(str, n):
   front = str[:n]
   back = str[n+1:]
   return front + back
-
-
-x = missing_char("kitten", 2)
-
-print(x)

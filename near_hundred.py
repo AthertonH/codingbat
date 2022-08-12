@@ -15,11 +15,3 @@ def near_hundred(n):
 
 def near_hundred_short(n):
     return((abs)(100-n) <=10 or (abs)(200-n) <=10)
-
-
-x = near_hundred(93)
-print(x)
-
-
-x = near_hundred_short(83)
-print(x)
