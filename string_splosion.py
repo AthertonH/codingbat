@@ -7,4 +7,7 @@
 
 
 def string_splosion(str):
-    return random.choice(str)
+    result = ""
+    for i in range(0, len(str), 1):
+        result = result + str[:i+1]
+    return result
