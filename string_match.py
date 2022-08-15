@@ -8,11 +8,22 @@
 
 def string_match(a, b):
     count = 0
-    for i in range(len(a)):
-        if a[i] and a[i+1] == b[i] and b[i+1]:
+    length = min(len(a), len(b)) - 1
+    for i in range(0, length, 1):
+        if a[i:i + 2] == b[i:i + 2]:
             count += 1
     return count
 
-string_match('xxcaazz', 'xxbaaz')
 
-print(x)
+# def string_match(a, b):
+#     # Figure which string is shorter.
+#     shorter = min(len(a), len(b))
+#     count = 0
+#
+#     # Loop i over every substring starting spot.
+#     # Use length-1 here, so can use char str[i+1] in the loop
+#     for i in range(shorter - 1):
+#         a_sub = a[i:i + 2]
+#         b_sub = b[i:i + 2]
+#         if a_sub == b_sub:
+#             count = count + 1
