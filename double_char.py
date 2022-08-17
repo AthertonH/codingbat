@@ -6,5 +6,7 @@
 # double_char('Hi-There') → 'HHii--TThheerree'
 
 def double_char(str):
+    result = ""
     for i in range(0, len(str), 1):
-        return str[i]*2
+        result += str[i] + str[i]
+    return result
