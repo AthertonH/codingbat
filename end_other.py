@@ -22,4 +22,4 @@ def end_other(a, b):
 def end_other(a, b):
   a = a.lower()
   b = b.lower()
-  return a[-(len(b)):] == b or a == b[-(len(a)):]
+  return b == a[-(len(b)):] or a == b[-(len(a)):]
