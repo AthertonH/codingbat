@@ -9,6 +9,9 @@
 # centered_average([-10, -4, -2, -4, -2, 0]) → -3
 
 def centered_average(nums):
-    minimum = int(min(nums))
-    maximum = int(max(nums))
-    return (sum(nums) - minimum - maximum) / (len(nums - 2))
+    minimum = min(nums)
+    maximum = max(nums)
+    average = (sum(nums) - (minimum+maximum)) / (len(nums) - 2)
+    return(average)
+
+centered_average([1, 2, 3, 4, 100])
